@@ -59,7 +59,7 @@ def check_dependencies():
         'numpy',
         'pandas',
         'matplotlib',
-        'sklearn',  # Note: installed as scikit-learn
+        'sklearn',  # Note: package name is scikit-learn, imported as sklearn
         'jupyter',
         'tqdm',
     ]

@@ -6,7 +6,7 @@ from typing import Tuple, Optional
 
 def load_dataset(path: str, normalize: bool = True) -> Tuple[np.ndarray, np.ndarray]:
     """
-    Load a dataset from file (template function).
+    Template function - Load a dataset from file (raises NotImplementedError).
     
     This is a template function that should be implemented based on your specific
     dataset format (CSV, NPY, HDF5, etc.).

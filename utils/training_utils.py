@@ -2,7 +2,7 @@
 
 import torch
 import torch.nn as nn
-from typing import Callable, Dict, List, Optional, Tuple
+from typing import Callable, Dict, List, Optional, Tuple, Union, Any
 from tqdm import tqdm
 
 
@@ -102,7 +102,7 @@ def evaluate(model: nn.Module, dataloader: torch.utils.data.DataLoader,
 def train_model(model: nn.Module, train_loader: torch.utils.data.DataLoader,
                val_loader: torch.utils.data.DataLoader, criterion: nn.Module,
                optimizer: torch.optim.Optimizer, epochs: int,
-               device: str = 'cpu', scheduler = None,
+               device: str = 'cpu', scheduler: Optional[Any] = None,
                save_best: bool = True, checkpoint_path: str = 'best_model.pt') -> Dict[str, List[float]]:
     """
     Complete training loop with validation.
