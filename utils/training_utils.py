@@ -102,7 +102,7 @@ def evaluate(model: nn.Module, dataloader: torch.utils.data.DataLoader,
 def train_model(model: nn.Module, train_loader: torch.utils.data.DataLoader,
                val_loader: torch.utils.data.DataLoader, criterion: nn.Module,
                optimizer: torch.optim.Optimizer, epochs: int,
-               device: str = 'cpu', scheduler: Optional[torch.optim.lr_scheduler._LRScheduler] = None,
+               device: str = 'cpu', scheduler = None,
                save_best: bool = True, checkpoint_path: str = 'best_model.pt') -> Dict[str, List[float]]:
     """
     Complete training loop with validation.

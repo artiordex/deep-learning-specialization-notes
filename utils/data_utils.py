@@ -6,7 +6,10 @@ from typing import Tuple, Optional
 
 def load_dataset(path: str, normalize: bool = True) -> Tuple[np.ndarray, np.ndarray]:
     """
-    Load a dataset from file.
+    Load a dataset from file (template function).
+    
+    This is a template function that should be implemented based on your specific
+    dataset format (CSV, NPY, HDF5, etc.).
     
     Args:
         path: Path to the dataset file
@@ -16,9 +19,10 @@ def load_dataset(path: str, normalize: bool = True) -> Tuple[np.ndarray, np.ndar
         Tuple of (features, labels)
         
     Example:
-        >>> X, y = load_dataset('data/train.csv', normalize=True)
+        >>> # Implement based on your data format
+        >>> # X, y = load_dataset('data/train.csv', normalize=True)
     """
-    # Placeholder implementation
+    # Placeholder implementation - customize for your dataset
     raise NotImplementedError("Implement dataset loading for your specific format")
 
 
